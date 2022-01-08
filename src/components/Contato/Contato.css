@@ -1,0 +1,128 @@
+ .container-contato{
+    display: flex;
+    justify-content:space-between;
+    margin: 0 15%;
+}
+
+ .container-email{
+    width:40%;
+}
+
+.container-contatos{
+    width: 40%;
+}
+
+ .container-contato .single-input{
+    position: relative;
+}
+
+ .container-contato form{
+    margin-top:25px;
+    margin-bottom: 100px;
+}
+
+ .container-contato .single-input label{
+    position: absolute;
+    bottom: 20px;
+    left:10px;
+    cursor:text;
+    transition:.5s;
+    color: var(--title-color);
+}
+
+ .container-contato .single-input .input-mensagem{
+    position: absolute;
+    bottom: 40px;
+    left:10px;
+    cursor:text;
+    transition:.5s;
+    color: var(--title-color);
+}
+ .container-contato .single-input .input{
+    width: 100%;
+    padding:5px 0;
+    border:0;
+    border-bottom: 2px solid rgb(161, 161, 161);
+    outline: none;
+    transition:.5s;
+    background-color:#1A1A1A;
+    margin: 15px 0;
+    max-width: 400px;
+    color: var(--title-color)
+}
+
+ .container-contato .single-input .input:focus,
+ .container-contato .single-input .input:valid{
+    border-bottom: 2px solid var(--icons-color);
+}
+
+ .container-contato .single-input .input:focus ~ label,
+ .container-contato .single-input .input:valid ~ label{
+    transform: translateY(-25px);
+    font-size:12px;
+    font-weight:bold;
+    color: var(--icons-color);
+}
+
+ .container-contato .container-email h13{
+    color: var(--title-color);
+    font-size:var(--font-size-title);
+    font-weight:bold;
+}
+
+ .container-contato .container-email button{
+    width: 125px;
+    height: 30px;
+    border-radius: 5px;
+    border:none;
+    background-color: var(--icons-color);
+    cursor: pointer;
+    color: #1A1A1A;
+    font-weight: bold;
+    transition:.7s;
+    margin-top: 10px;
+}
+
+ .container-contato .container-email button:hover{
+    background-color: var(--btn-secondary-color);
+    color: var(--title-color);
+}
+
+ .container-contato .container-contatos h14{
+    color: var(--title-color);
+    font-size:var(--font-size-title);
+    font-weight: bold;
+}
+
+ .container-contato .container-contatos p{
+    color: var(--title-color);
+    margin: 10px 0;
+}
+
+ .container-contato .container-contatos i{
+    color: var(--icons-color);
+    font-size: 30px;
+    margin: 5px 5px;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+
+ .container-contato .container-contatos i:hover{
+    transform: scale(1.1);
+}
+
+@media (max-width: 1000px){
+    .container-contato{
+        flex-direction: column;
+        justify-content:center
+    }
+    .container-email,.container-contatos{
+        width:100%
+    }
+    .container-email{
+        margin-top: 35px;
+    }
+    .container-contatos{
+        margin-top: -40px;
+    }
+}

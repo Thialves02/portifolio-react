@@ -1,0 +1,43 @@
+ .container-skills h12{
+    display: flex;
+    justify-content:center;
+    font-size:var(--font-size-title);
+    color: var(--title-color);
+    font-weight:bold;
+    margin-bottom:30px;
+}
+
+ .container-skills .skills{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+ .container-skills .skills .skill{
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    background-color: #3333;
+    min-width:125px;
+    height: 125px;
+    margin: 0 20px 150px;
+    cursor: pointer;
+}
+
+ .container-skills .skills .skill span {
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    color: var(--icons-color);
+    
+    font-size: 25px;
+    font-weight: bold;
+}
+
+
+
+@media (max-width: 1350px){
+    .container-skills .skills .skill{
+        margin-bottom:25px;
+    }
+}

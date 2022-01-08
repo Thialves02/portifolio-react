@@ -1,0 +1,46 @@
+ .container-servicos h10{
+    display: flex;
+    justify-content: center;
+    color: var(--title-color);
+    font-size:32px;
+    font-weight: bold;
+    margin-bottom:30px;
+}
+
+ .container-servicos .servicos{
+    display: flex;
+    justify-content:center;
+    margin-bottom:157px;
+}
+
+ .container-servicos .servicos .servico{
+    background-color:#212121;
+    display: flex;
+    flex-direction: column;
+    height:90px;
+    width:200px;
+    margin: 0 50px;
+    padding: 50px;
+    border-bottom: 4px solid #00DF5E;
+}
+.container-servicos .servicos .servico .servico-icon{
+    color:var(--icons-color);
+    font-size:27px;
+    font-weight: 400;
+    margin-bottom:15px;
+}
+
+ .container-servicos .servicos .servico h11{
+    font-size:27px;
+    color: var(--subtitle-color);
+}
+
+@media (max-width: 800px){
+    .container-servicos .servicos{
+        flex-direction:column;
+        align-items: center;
+    }
+    .container-servicos .servicos .servico{
+         margin-bottom: 50px;
+    }
+}
