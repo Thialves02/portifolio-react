@@ -109,7 +109,7 @@ export default function Projeto() {
 
     return (
         <>
-        <h7 className="container-projetos-title">Projetos</h7>
+        <h7 className="container-projetos-title" id="projetos">Projetos</h7>
                 <div className="projeto">
                     <div className='icon-projeto-left'>
                         <FontAwesomeIcon icon={faArrowLeft} onClick={diminuir}/>

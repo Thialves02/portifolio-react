@@ -22,7 +22,10 @@ header ul {
     display: flex;
     list-style-type: none;
 }
-
+a{
+    text-decoration: none;
+    color: var(--title-color);
+}
 header ul li{
     margin: 0 15px;
     font-size: 18px;
@@ -55,7 +58,7 @@ header ul li:hover::after{
 }
 
 
-@media (max-width: 1160px){
+@media (max-width: 1160px){   
 	.checkbtn {
 		display: block;
 	}
@@ -108,7 +111,7 @@ header ul li:hover::after{
             transition: all .5s;
             z-index: 999;
     }
-    .open-header{
+    header{
         display:flex;
         justify-content:space-around;
         position:fixed;

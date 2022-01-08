@@ -6,7 +6,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 export default function Servicos() {
     return (
-        <div className='container-servicos'>
+        <div className='container-servicos' id='servicos'>
             <h10>Serviços</h10>
             <div className='servicos'>
                 <div className='servico' data-anime='right'>

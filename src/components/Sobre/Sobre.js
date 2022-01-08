@@ -9,7 +9,7 @@ import { faPhone } from "@fortawesome/free-solid-svg-icons";
 export default function Sobre() {
     return (
         <>
-        <div class="container-sobre-mim">
+        <div class="container-sobre-mim" id='sobre'>
             <h4 data-anime='top'>Sobre mim</h4>
             <p data-anime='top'>Atualmente tenho 19 anos, sempre fui apaixonado por programação e em 2021 resolvi entrar na Blue Edtech, onde pude aprender Python, Html, CSS, Javascript, React, Nest, Banco de dados e SoftSkills.
                 No momento tenho experiência com trabalhos como freelancer para duas empresas e também adquiri conhecimento sobre Metodologias Ágeis e Git Flow através de um Bootcamp em grupo.

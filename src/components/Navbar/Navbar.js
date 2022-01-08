@@ -19,10 +19,11 @@ export default function Navbar() {
             </label>
             <h1>Portifólio</h1>
             <ul className={click ? 'header ul' : 'open'}>
-                <li>Sobre mim</li>
-                <li>Projetos</li>
-                <li>Serviços</li>
-                <li>Minhas skills</li>
+                <a href="#sobre"><li>Sobre mim</li></a>
+                <a href="#projetos"><li>Projetos</li></a>
+                <a href="#servicos"><li>Serviços</li></a>
+                <a href="#skills"><li>Minhas skills</li></a>
+                <a href="#container-contato"><li>Contato</li></a>
             </ul>
         </header>
         </>
