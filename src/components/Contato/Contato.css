@@ -113,16 +113,16 @@
 
 @media (max-width: 1000px){
     .container-contato{
-        flex-direction: column;
+        flex-direction: column-reverse;
         justify-content:center
     }
     .container-email,.container-contatos{
         width:100%
     }
     .container-email{
-        margin-top: 35px;
+        margin-top: 10px;
     }
     .container-contatos{
-        margin-top: -40px;
+        margin-top: 40px;
     }
 }

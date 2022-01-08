@@ -12,8 +12,8 @@
 
 .type-animation{
     animation: 
-    cursor .7s steps(28) 2s infinite normal,
-    type 4s steps(30) 2s normal both
+    cursor .4s steps(28) 2s infinite normal,
+    type 4s steps(30) 1s normal both
 }
 
 
