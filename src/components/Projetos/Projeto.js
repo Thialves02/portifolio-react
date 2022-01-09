@@ -21,7 +21,7 @@ export default function Projeto() {
             tecnologias:'React, Nest, CSS e Git',
             imagem:blue,
             site:'',
-            repositorio:''
+            repositorio:'https://github.com/lucasmbrute2/blue-Shoes-ReactJs'
         },
         {
             nome:'Ambiental Bueno',
@@ -29,7 +29,7 @@ export default function Projeto() {
             descricao:'Esse foi o meu projeto como desenvolvedor front-end freelancer. Ao decorrer do projeto pude aprender a me organizar melhor, versionar meus códigos, como utilizar bibliotecas externas e sobre responsividade e acessibilidade para usuários mobile.',
             tecnologias:'HTML, CSS, Bootstrap, Git',
             imagem:AB,
-            site:'',
+            site:'https://ambientalbueno.com.br',
             repositorio:''
         },
         {
@@ -120,8 +120,12 @@ export default function Projeto() {
                         <h10>{projects[start].descricao}</h10>
                         <h11>Tecnologias: {projects[start].tecnologias}</h11>
                         <div className="projeto-button">
-                            <a><button>Visitar o site</button></a>
-                            <a href={projects[start].repositorio} target="_blank"><button>Ir ao repositório</button></a>
+                            {projects[start].site != '' && 
+                                <a href={projects[start].site}><button>Visitar o site</button></a>
+                            }
+                            {projects[start].repositorio != '' && 
+                                <a href={projects[start].repositorio} target="_blank"><button>Ir ao repositório</button></a>
+                            }                                                     
                         </div>
                     </div>
                     <img src={projects[start].imagem}/>
