@@ -1,19 +1,28 @@
 import React, { useRef } from 'react'
 import './Contato.css'
 import emailjs from 'emailjs-com';
+import Swal from "sweetalert2";
 
 export default function Contato() {
+    const HandleClick = () => {  
+        Swal.fire({  
+          title: 'Email enviado com sucesso!',  
+          icon: 'success',  
+          text: 'Obrigado pelo contato ;)',  
+        });  
+      } 
     const form = useRef();
     const sendEmail = (e) => {
         e.preventDefault();
         emailjs.sendForm('GmailMessage', 'template_pq0fszh', form.current, 'user_GeEQ4Gwe0Y7RfLGorsrwD')
           .then(() => {
-              alert('mensagem enviada com sucesso');
-              e.target.reset();
+                HandleClick()
+                e.target.reset();
           }, (error) => {
-              console.log(error.text);
+                console.log(error.text);
           });
       };
+      
     return (
         <div className='container-contato' id='container-contato'>
             <div className='container-email'>
