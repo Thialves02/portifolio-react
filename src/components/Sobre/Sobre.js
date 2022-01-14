@@ -1,10 +1,7 @@
 import React from 'react'
 import './Sobre.css'
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faSmile } from "@fortawesome/free-solid-svg-icons";
-import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
-import { faUsers } from "@fortawesome/free-solid-svg-icons";
-import { faPhone } from "@fortawesome/free-solid-svg-icons";
+import { faSmile, faEnvelope, faUsers, faPhone } from "@fortawesome/free-solid-svg-icons";
 
 export default function Sobre() {
     return (
