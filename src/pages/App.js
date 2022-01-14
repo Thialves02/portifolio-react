@@ -6,6 +6,7 @@ import Projeto from '../components/Projetos/Projeto';
 import Servicos from '../components/Servicos/Servicos';
 import Skills from '../components/Skills/Skills';
 import Sobre from '../components/Sobre/Sobre';
+import Top from '../components/Top/Top';
 import './App.css';
 
 function App() {
@@ -18,6 +19,7 @@ function App() {
     <Servicos/>
     <Skills/>
     <Contato/>
+    <Top/>
     <Footer/>
     </>
   );
