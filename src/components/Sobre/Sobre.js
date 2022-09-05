@@ -8,8 +8,10 @@ export default function Sobre() {
         <>
         <div class="container-sobre-mim" id='sobre'>
             <h4 data-anime='top'>Sobre mim</h4>
-            <p data-anime='top'>Atualmente tenho 19 anos, sempre fui apaixonado por programação e em 2021 resolvi entrar na Blue Edtech, onde pude aprender Python, Html, CSS, Javascript, React, Nest, Banco de dados e SoftSkills.
-                No momento tenho experiência com trabalhos como freelancer para duas empresas e também adquiri conhecimento sobre Metodologias Ágeis e Git Flow através de um Bootcamp em grupo.
+            <p data-anime='top'>Amante da tecnologia, focado em aprender e usar a tecnologia para tornar o mundo um lugar melhor. Dei inicio a minha jornada em desenvolvimento no ano de 2021 quando entrei na Blue Edtech, onde pude aprender as principais tecnologias de fullstack, desenvolvi projetos reais em grupo para empresas parceiras e tive aulas sobre SoftSkills.<br></br>
+                                • Possuo experiência em desenvolvimento front end como freelancer e em tempo integral.<br></br>
+                                • Desenvolvo aplicações Web utilizando HTML5, CSS3, SASS, Javascript, JQuery, ReactJs (React Hooks, Router Dom, Context), Jest, MYSQL, Git, GitHub, APIS REST e FIGMA.<br></br>
+                                • Atualmente estou focado em aprimorar minhas habilidades em UI/UX utilizando figma, boas práticas e melhores formas de codificação em Javascript e React.<br></br>
             </p>
             <div className='container-informacoes' data-anime='bottom'>
                 <div className='informacao' >

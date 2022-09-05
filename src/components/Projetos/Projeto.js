@@ -140,12 +140,12 @@ export default function Projeto() {
           <h10>{projects[start].descricao}</h10>
           <h11>Tecnologias: {projects[start].tecnologias}</h11>
           <div className="projeto-button">
-            {projects[start].site != "" && (
+            {projects[start].site !== "" && (
               <a href={projects[start].site}>
                 <button>Visitar o site</button>
               </a>
             )}
-            {projects[start].repositorio != "" && (
+            {projects[start].repositorio !== "" && (
               <a href={projects[start].repositorio} target="_blank">
                 <button>Ir ao repositório</button>
               </a>
