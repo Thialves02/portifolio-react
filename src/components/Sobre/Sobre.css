@@ -43,6 +43,10 @@
     min-width:150px;
 }
 
+.container-sobre-mim .container-informacoes .informacao a{
+    text-align: center;
+}
+
  .container-sobre-mim .container-informacoes .informacao i{
     background-color: #212121;
     color:var(--icons-color);
