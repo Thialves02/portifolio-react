@@ -12,18 +12,29 @@ import recipe from "../../assets/images/recipes.png";
 import login from "../../assets/images/login.png";
 import loki from "../../assets/images/loki.png";
 import assistir from "../../assets/images/assistir.png";
+import qualNumero from "../../assets/images/qualNumero.gif";
 
 export default function Projeto() {
   const [projects] = useState([
+    {
+      nome: "Qual o número?",
+      cargo: "Desenvolvedor Front-end",
+      descricao:
+        "Projeto com intuito de trabalhar a memória e a lógica do usuário, fazendo com ele memorize os seus palpites e raciocine corretamente sua próxima tentativa. Para vencer o jogo é necessário que o usuário acerte um número entre 1 e 300 que é gerado aleatoriamente por uma API.",
+      tecnologias: "React, CSS e Git",
+      imagem: qualNumero,
+      site: "thi-pokeapi.netlify.app",
+      repositorio: "https://github.com/Thialves02/Pokeapi",
+    },
     {
       nome: "Poke API",
       cargo: "Desenvolvedor Front-end",
       descricao:
         "Desenvolvi essa aplicação com o objetivo de aprender sobre LocalStorage e InifiteScroll",
-      tecnologias: "React, CSS e Git",
+      tecnologias: "HTML, CSS, JavaScript, JEST e Git",
       imagem: pokeapi,
-      site: "thi-pokeapi.netlify.app",
-      repositorio: "https://github.com/Thialves02/Pokeapi",
+      site: "https://studio-sol-thi.netlify.app",
+      repositorio: "https://github.com/Thialves02/Studio-Sol",
     },
     {
       nome: "Blue Shoes",
@@ -141,18 +152,18 @@ export default function Projeto() {
           <h11>Tecnologias: {projects[start].tecnologias}</h11>
           <div className="projeto-button">
             {projects[start].site !== "" && (
-              <a href={projects[start].site}>
+              <a href={projects[start].site} target="_blank" rel="noreferrer">
                 <button>Visitar o site</button>
               </a>
             )}
             {projects[start].repositorio !== "" && (
-              <a href={projects[start].repositorio} target="_blank">
+              <a href={projects[start].repositorio} target="_blank" rel="noreferrer">
                 <button>Ir ao repositório</button>
               </a>
             )}
           </div>
         </div>
-        <img src={projects[start].imagem} />
+        <img src={projects[start].imagem} alt={projects[start].nome}/>
         <div className="icon-projeto-right">
           <FontAwesomeIcon icon={faArrowRight} onClick={aumenta} />
         </div>
