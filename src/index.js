@@ -2,10 +2,13 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import App from './pages/App';
 import './index.css'
+import CtxApp from './context/CtxApp';
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <CtxApp>
+      <App />
+    </CtxApp>
   </React.StrictMode>,
   document.getElementById('root')
 );
