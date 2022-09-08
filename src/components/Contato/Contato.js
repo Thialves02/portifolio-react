@@ -5,22 +5,30 @@ import Swal from "sweetalert2";
 import Button from '../Button/Button';
 
 export default function Contato() {
-    const HandleClick = () => {  
+    const enviado = () => {  
         Swal.fire({  
           title: 'Email enviado com sucesso!',  
           icon: 'success',  
           text: 'Obrigado pelo contato ;)',  
         });  
-      } 
+    } 
+    const error = () => {
+        Swal.fire({  
+            title: 'Erro ao enviar email!',  
+            icon: 'error',  
+            text: 'Por favor, entre em contato através de outra maneira (LinkedIn, Telefone) ;)',  
+          });  
+    }
+
     const form = useRef();
     const sendEmail = (e) => {
         e.preventDefault();
         emailjs.sendForm('GmailMessage', 'template_pq0fszh', form.current, 'user_GeEQ4Gwe0Y7RfLGorsrwD')
           .then(() => {
-                HandleClick()
+                enviado()
                 e.target.reset();
-          }, (error) => {
-                console.log(error.text);
+          }, () => {
+                error()
           });
       };
       
@@ -39,7 +47,7 @@ export default function Contato() {
                     </div>
                     <div className='single-input'>
                         <input type="text" name='telefone' className='input' required/>
-                        <label for='assunto'>Telefone</label>
+                        <label for='telefone'>Telefone</label>
                     </div>
                     <div className='single-input'>
                         <textarea  name="mensagem" className='input' required></textarea>
