@@ -26,6 +26,7 @@
     margin-right: 50px;
     color:rgb(255, 255, 255);
     max-width: 500px;
+    min-width: 320px;
 }
 
 .projeto .projeto-infos h8{
@@ -56,22 +57,6 @@
     margin-top: 20px;
 }
 
-.projeto .projeto-infos a button{
-    width:150px;
-    height:30px;
-    background-color:var(--icons-color);
-    border-radius:5px;
-    border:none;
-    cursor: pointer;
-    transition: all .5s;
-    font-weight: bold;
-    margin: 0 5px;
-}
-
- .projeto .projeto-infos a button:hover{
-    background-color: var(--btn-secondary-color);
-    color: var(--title-color);
-}
 
  .projeto img{
     /* padding:20px; */
@@ -87,6 +72,17 @@
     align-items: center;
     margin: 0 35px;
     cursor: pointer;
+}
+
+.align-div-flex,.align-div-col{
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    width:100%
+}
+
+.align-div-col{
+    flex-direction: column;
 }
 
 @media (max-width: 1160px){

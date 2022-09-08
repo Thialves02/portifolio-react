@@ -1,11 +1,3 @@
-:root{
-    --title-color:#F9F9F9;
-    --subtitle-color:#828282;
-    --icons-color:#00DF5E;
-    --btn-secondary-color:#171717;
-    --font-size-title:32px;
-}
-
 header{
     display: flex;
     align-items: center;
