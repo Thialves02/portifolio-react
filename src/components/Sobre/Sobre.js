@@ -29,15 +29,16 @@ export default function Sobre() {
                     <h5>E-mail</h5>
                     <h6>thiago.ralves02@gmail.com</h6>
                 </div>
-                <a href="https://www.linkedin.com/in/thiago-roberto/" target="_blank">
+                
                 <div className='informacao'>
-                    <div className='info-icons'>
-                        <FontAwesomeIcon icon={faUsers}/>
-                    </div>
-                    <h5>Linkedin</h5>
-                    <h6>thiago-roberto</h6>
+                    <a href="https://www.linkedin.com/in/thiago-roberto/" target="_blank">
+                        <div className='info-icons'>
+                            <FontAwesomeIcon icon={faUsers}/>
+                        </div>
+                        <h5>Linkedin</h5>
+                        <h6>thiago-roberto</h6>
+                    </a>
                 </div>
-                </a>
                 <div className='informacao'>
                     <div className='info-icons'>
                         <FontAwesomeIcon icon={faPhone}/>

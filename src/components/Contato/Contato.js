@@ -2,6 +2,7 @@ import React, { useRef } from 'react'
 import './Contato.css'
 import emailjs from 'emailjs-com';
 import Swal from "sweetalert2";
+import Button from '../Button/Button';
 
 export default function Contato() {
     const HandleClick = () => {  
@@ -44,7 +45,12 @@ export default function Contato() {
                         <textarea  name="mensagem" className='input' required></textarea>
                         <label for='assunto' className='input-mensagem'>Mensagem</label>
                     </div>
-                    <button type="submit">ENVIAR</button>
+                    <Button
+                    component="button"
+                    type="submit"
+                    >
+                        ENVIAR
+                    </Button>
                 </form>
             </div>
             <div className='container-contatos'>
