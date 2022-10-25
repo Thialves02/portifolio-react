@@ -19,11 +19,22 @@ import TipoProjeto from "../tipoProjeto/tipoProjeto";
 import foodWebApp from "../../assets/images/foodWebApp.gif";
 import landingPage from "../../assets/images/landingPage.jpg";
 import cadastroUsuario from "../../assets/images/cadastroUsuario.jpg"
+import lojaFilmes from "../../assets/images/loja-filmes.gif"
 
 import Button from "../Button/Button";
 
 export default function Projetos() {
   const [projects] = useState([
+    {
+      nome: "Loja de Filmes",
+      cargo: "Desenvolvedor Front-end",
+      descricao:
+        "Projeto com intuito de simular uma loja de filmes onde o usuário pode visualizar os filmes mais populares do momento, pesquisar , favoritar e adicionar os filmes escolhidos no carrinho. Ao final o usuário adiciona suas informações e finaliza a compra.",
+      tecnologias: "HTML, CSS, React, Router Dom, Context, Styled Components, Formik, Axios, LocalStorage, InfiniteScroll e Git",
+      imagem: lojaFilmes,
+      site: "https://thi-filmes-dot.netlify.app",
+      repositorio: "https://github.com/Thialves02/loja-filmes-DOT"
+    },
     {
       nome: "Qual o número?",
       cargo: "Desenvolvedor Front-end",
@@ -39,7 +50,7 @@ export default function Projetos() {
       cargo: "Desenvolvedor Front-end",
       descricao:
         "Desenvolvi essa aplicação com o objetivo de aprender sobre LocalStorage e InifiteScroll",
-      tecnologias: "React, CSS e Git",
+      tecnologias: "HTML, CSS, React e Git",
       imagem: pokeapi,
       site: "thi-pokeapi.netlify.app",
       repositorio: "https://github.com/Thialves02/Pokeapi",

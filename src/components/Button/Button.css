@@ -15,6 +15,6 @@
 }
 
 .button:hover{
-    background-color: var(--btn-secondary-color);
+    background-color: #008035;
     color: var(--title-color);
 }
